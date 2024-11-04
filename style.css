@@ -496,12 +496,55 @@ button{
     height: 50px;
   }
 
+  @keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  .latest {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .slider {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .Popular {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .wrapper {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .Accessories {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  .shipping {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+
   @media only screen and (max-width:768px){
     .home .content{
       flex-direction: column;
     }
-    .left, .right{
-      width: 100%;
+    .left , .right{
+      width: 110%;
     }
     .home .left{
       padding: 50px 100px 50px 50px;
@@ -564,6 +607,13 @@ button{
     .shipping{
       padding: 50px 0 50px 0;
     }
+
+    .latest {
+      animation: none; 
+    }
+    .Accessories{
+      animation: none;
+    }
   }
 
   .btn1 , .btn2:hover{
@@ -574,45 +624,4 @@ button{
   }
 
 
-  @keyframes appear {
-    from {
-      opacity: 0;
-      clip-path: inset(100% 100% 0 0);
-    }
-    to {
-      opacity: 1;
-      clip-path: inset(0 0 0 0);
-    }
-  }
-
-  .latest {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-  .slider {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-  .Popular {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-  .wrapper {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-  .Accessories {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-  .shipping {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-  }
-  
+ 
